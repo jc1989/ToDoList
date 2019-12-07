@@ -1,25 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
+    <title>Todo List App</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="main.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>To Do List</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>Todo List App:</h1>
     <div>
-        <h1>To Do List</h1>
+      <h2>Add Todo Item Here:</h2>
+      <div>
+          <textarea id="new_todo" rows="4" cols="50"></textarea>
+          <button id="addTodo"> Add Todo Item </button>
+      </div>
+
+      <h3>My Todo Items:</h3>
+      <div id="todo_items_list">
+
+      </div>
     </div>
-    <div>
-        <div>
-            To Do List: <span id = "List"></span>
-        </div>
-        <input id="addInput"></input>
-        <button id="add">Add</button>
-        <button id="delete">Delete</button>
-        <button id="complete">Mark Complete</button>
-    </div>
-</body>
+  </body>
 </html>
